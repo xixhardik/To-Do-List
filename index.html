@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Enter username" required>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- To-Do List Application -->
+    <div id="todo-app" style="display: none;">
+        <h2 id="welcome"></h2>
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <input type="number" id="task-time" placeholder="Time in minutes" min="1">
+        <button onclick="addTask()">Add Task</button>
+        
+        <div id="tasks"></div>
+        <div id="percentage-tracker">0% Completed</div>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
